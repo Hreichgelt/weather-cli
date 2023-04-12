@@ -20,10 +20,8 @@ async function getWeather() {
 }
 getWeather().then(data => console.log(data));
 
-// clean up the response 
-// let weather = JSON.parse(body);
-// let message = `It's ${weather.main.temp} degrees in ${weather.name}`;
-// console.log(message);
+// how can I clean up the response?
+
 
 
 
