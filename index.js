@@ -1,11 +1,14 @@
 require("dotenv").config();
 const argv = require("yargs").argv;
 const APIKEY = `${process.env.APIKEY}`;
+console.log(argv);
+
 
 //default city = La Crosse
 // argv.c = city - to call specific city use node index.js -c tokyo
 // const location = argv.c || "winona";
-var zipcode = argv.zipcode || "80031";
+// argv.zipcode = zipcode --- to call specific zip use node index.js --xxxxx
+var zipcode = argv.z || "80031";
 
 //api endoint
 // const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${APIKEY}`; //city
